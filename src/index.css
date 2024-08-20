@@ -1,0 +1,22 @@
+/* index.css */
+.site-layout-background {
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .site-layout-content {
+    padding: 16px;
+  }
+
+  .ant-layout-sider {
+    display: none; /* Hide the sidebar on very small screens */
+  }
+
+  .ant-layout-header {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}
