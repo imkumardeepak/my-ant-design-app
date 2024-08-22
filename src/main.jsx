@@ -3,9 +3,18 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import 'antd/dist/reset.css';
+import { ConfigProvider } from 'antd';
 
+
+
+const theme = {
+
+
+};
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <ConfigProvider theme={theme}>
+      <App />
+    </ConfigProvider>
   </StrictMode>,
 )
