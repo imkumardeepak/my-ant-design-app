@@ -1,38 +1,57 @@
 import React from 'react';
 import { SearchOutlined } from '@ant-design/icons';
-import { Button, Tooltip, Space } from 'antd';
+import { Button, Tooltip, Space, Card } from 'antd';
 
 const App = () => (
-  <Space direction="vertical" size="middle" style={{ width: '100%' }}>
-    <Space wrap>
-      <Tooltip title="search">
-        <Button type="primary" shape="circle" icon={<SearchOutlined />} danger />
-      </Tooltip>
-      <Button type="primary" shape="circle">
-        A
-      </Button>
-      <Button type="error" icon={<SearchOutlined />}>
-        Search
-      </Button>
-      <Tooltip title="search">
-        <Button shape="circle" icon={<SearchOutlined />} />
-      </Tooltip>
-      <Button icon={<SearchOutlined />}>Search</Button>
-    </Space>
-    <Space wrap>
-      <Tooltip title="search">
-        <Button shape="circle" icon={<SearchOutlined />} />
-      </Tooltip>
-      <Button icon={<SearchOutlined />}>Search</Button>
-      <Tooltip title="search">
-        <Button type="dashed" shape="circle" icon={<SearchOutlined />} />
-      </Tooltip>
-      <Button type="dashed" icon={<SearchOutlined />}>
-        Search
-      </Button>
-      <Button icon={<SearchOutlined />} href="https://www.google.com" />
-    </Space>
+  <Space>
+    <Card
+      title="Card title"
+      bordered={false}
+      style={{
+        width: 300,
+      }}
+    >
+      <p>Card content</p>
+      <p>Card content</p>
+      <p>Card content</p>
+    </Card>
+    <Card
+      title="Card title"
+      bordered={false}
+      style={{
+        width: 300,
+      }}
+    >
+      <p>Card content</p>
+      <p>Card content</p>
+      <p>Card content</p>
+    </Card>
+    <Card
+      title="Card title"
+      bordered={false}
+      style={{
+        width: 300,
+      }}
+    >
+      <p>Card content</p>
+      <p>Card content</p>
+      <p>Card content</p>
+    </Card>
+    <Card
+      title="Card title"
+      bordered={false}
+      style={{
+        width: 300,
+      }}
+    >
+      <p>Card content</p>
+      <p>Card content</p>
+      <p>Card content</p>
+    </Card>
+
   </Space>
+
+
 );
 
 export default App;
